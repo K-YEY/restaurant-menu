@@ -1,7 +1,8 @@
+@props(['PAGE_TITLE' => 'Title'])
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $PAGE_TITLE ?? 'Default Title' }}</title>
+    <title>{{ $PAGE_TITLE }}</title>
 
     <!-- libraries CSS -->
     <link rel="stylesheet" href="{{asset('assets/icon/flaticon_restics.css')}}">

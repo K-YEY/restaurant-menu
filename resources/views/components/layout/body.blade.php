@@ -11,7 +11,7 @@
         <div class="loader"></div>
     </div>
 
-    @if (Route::has('thanks'))
+    @if (!Request::routeIs('thanks'))
         <!-- Sidebar Section -->
         <x-layout.sidebar />
 
@@ -24,7 +24,7 @@
         {{ $slot }}
     </main>
 
-    @if (Route::has('thanks'))
+    @if (!Request::routeIs('thanks'))
         <!-- Footer Section -->
         <x-layout.footer />
     @endif
